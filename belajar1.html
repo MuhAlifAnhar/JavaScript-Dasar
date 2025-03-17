@@ -8,12 +8,20 @@
   <body>
     <div id="hasil"></div>
     <script>
-      const role = prompt("masukkan role akun");
+      const balon = prompt("balon apa?");
 
-      if (role !== "admin") {
-        console.log("silahkan akses web karyawan");
-      } else {
-        console.log("anda tidak memiliki akses");
+      switch (balon) {
+        case "merah":
+          console.log("balon merah");
+          break;
+        case "biru":
+          console.log("balon biru");
+          break;
+        case "hitam":
+          console.log("balon hitam");
+          break;
+        default:
+          console.log("balon tidak diketahui");
       }
     </script>
   </body>
