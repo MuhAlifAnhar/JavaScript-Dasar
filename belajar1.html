@@ -6,14 +6,17 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="hasil"></div>
     <script>
-      document.writeln("<textarea cols='30' rows='10'>");
-      document.writeln("Belajar \nJavascript");
-      document.writeln("Belajar \tJavascript"); 
-      document.writeln("Belajar \\Javascript");
-      document.writeln('Belajar "Javascript');
-      document.writeln("Belajar 'Javascript");
-      document.writeln("</textarea>");
+      const belajar = prompt("berapa kali belajar").toLowerCase();
+
+      if (belajar === "sudah") {
+        console.log("sudah belajar");
+      } else if (belajar === "belum") {
+        console.log("belum belajar");
+      } else {
+        console.log("belum nih belajar");
+      }
     </script>
   </body>
 </html>
