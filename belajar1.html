@@ -8,14 +8,12 @@
   <body>
     <div id="hasil"></div>
     <script>
-      const belajar = prompt("berapa kali belajar").toLowerCase();
+      const role = prompt("masukkan role akun");
 
-      if (belajar === "sudah") {
-        console.log("sudah belajar");
-      } else if (belajar === "belum") {
-        console.log("belum belajar");
+      if (role !== "admin") {
+        console.log("silahkan akses web karyawan");
       } else {
-        console.log("belum nih belajar");
+        console.log("anda tidak memiliki akses");
       }
     </script>
   </body>
