@@ -8,19 +8,15 @@
   <body>
     <div id="hasil"></div>
     <script>
-      const siswa = [
-        ["Rudi", "Budi", "Andi"],
-        ["olive", "aziz", "salma"],
-        ["kau", "aku", "dia"],
-      ];
+      const PASSWORD = "admin";
 
-      for (let i = 0; i < siswa.length; i++) {
-        const row = siswa[i];
-        console.log(`Sea Row #${i + 1}`);
-        for (let j = 0; j < row.length; j++) {
-          console.log(`   ${row[j]}`);
-        }
+      let nama = prompt("Masukkan Nama");
+
+      while (nama !== PASSWORD) {
+        nama = prompt("Masukkan Nama");
       }
+
+      alert("Selamat Datang " + nama);
     </script>
   </body>
 </html>
