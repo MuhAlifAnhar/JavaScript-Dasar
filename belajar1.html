@@ -8,8 +8,18 @@
   <body>
     <div id="hasil"></div>
     <script>
-      for (let i = 1; i <= 10; i++) {
-        console.log(i);
+      const siswa = [
+        ["Rudi", "Budi", "Andi"],
+        ["olive", "aziz", "salma"],
+        ["kau", "aku", "dia"],
+      ];
+
+      for (let i = 0; i < siswa.length; i++) {
+        const row = siswa[i];
+        console.log(`Sea Row #${i + 1}`);
+        for (let j = 0; j < row.length; j++) {
+          console.log(`   ${row[j]}`);
+        }
       }
     </script>
   </body>
