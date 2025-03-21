@@ -8,15 +8,14 @@
   <body>
     <div id="hasil"></div>
     <script>
-      const PASSWORD = "admin";
-
       let nama = prompt("Masukkan Nama");
 
-      while (nama !== PASSWORD) {
-        nama = prompt("Masukkan Nama");
+      while (true) {
+        nama = prompt(nama);
+        if (nama.toLowerCase() == "stop") break;
       }
 
-      alert("Selamat Datang " + nama);
+      alert("Terimakasih");
     </script>
   </body>
 </html>
